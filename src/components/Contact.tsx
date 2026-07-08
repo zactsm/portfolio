@@ -32,7 +32,7 @@ export function Contact() {
                   href={link.href}
                   target={isExternal ? "_blank" : undefined}
                   rel={isExternal ? "noreferrer" : undefined}
-                  className="group flex items-center justify-between gap-4 border-b border-[var(--line)] p-5 transition hover:bg-[var(--surface-strong)] hover:text-[var(--background)] sm:p-7"
+                  className="inverse-hover group flex items-center justify-between gap-4 border-b border-[var(--line)] p-5 transition sm:p-7"
                 >
                   <span className="flex min-w-0 items-center gap-3">
                     <span className="flex h-10 w-10 shrink-0 items-center justify-center border border-[var(--line)] text-[var(--foreground)] transition group-hover:border-[var(--background)] group-hover:text-[var(--background)]">

@@ -130,6 +130,24 @@ button {
   border-top: 0;
 }
 
+.nav-link-active,
+.nav-link-active * {
+  color: var(--background) !important;
+}
+
+.nav-link-active {
+  background: var(--surface-strong) !important;
+}
+
+.inverse-hover:hover {
+  background: var(--surface-strong) !important;
+  color: var(--background) !important;
+}
+
+.inverse-hover:hover * {
+  color: var(--background) !important;
+}
+
 .display-type {
   color: var(--foreground);
   font-size: clamp(4.4rem, 13vw, 16rem);

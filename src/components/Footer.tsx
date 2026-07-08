@@ -19,7 +19,7 @@ export function Footer() {
                 href={link.href}
                 target={link.href.startsWith("http") ? "_blank" : undefined}
                 rel={link.href.startsWith("http") ? "noreferrer" : undefined}
-                className="inline-flex h-16 w-16 items-center justify-center border-r border-[var(--line)] text-[var(--foreground)] transition last:border-r-0 hover:bg-[var(--surface-strong)] hover:text-[var(--background)]"
+                className="inverse-hover inline-flex h-16 w-16 items-center justify-center border-r border-[var(--line)] text-[var(--foreground)] transition last:border-r-0"
                 aria-label={link.label}
               >
                 <Icon size={17} />

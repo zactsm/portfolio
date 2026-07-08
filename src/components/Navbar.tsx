@@ -1,12 +1,43 @@
 "use client";
 
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { navItems, profile } from "@/lib/portfolio";
 import { cn } from "@/lib/utils";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeHref, setActiveHref] = useState("");
+
+  useEffect(() => {
+    const sectionIds = navItems.map((item) => item.href.replace("#", ""));
+    const sections = sectionIds
+      .map((id) => document.getElementById(id))
+      .filter((section): section is HTMLElement => Boolean(section));
+
+    if (sections.length === 0) {
+      return undefined;
+    }
+
+    const updateActiveSection = () => {
+      const viewportAnchor = window.innerHeight * 0.36;
+      const currentSection = sections.find((section) => {
+        const rect = section.getBoundingClientRect();
+        return rect.top <= viewportAnchor && rect.bottom >= viewportAnchor;
+      });
+
+      setActiveHref(currentSection ? `#${currentSection.id}` : "");
+    };
+
+    updateActiveSection();
+    window.addEventListener("scroll", updateActiveSection, { passive: true });
+    window.addEventListener("resize", updateActiveSection);
+
+    return () => {
+      window.removeEventListener("scroll", updateActiveSection);
+      window.removeEventListener("resize", updateActiveSection);
+    };
+  }, []);
 
   return (
     <header className="fixed left-0 right-0 top-0 z-50 border-y border-[var(--line)] bg-[var(--background)]">
@@ -21,25 +52,43 @@ export function Navbar() {
           <sup className="ml-0.5 text-xs">TM</sup>
         </a>
 
-        {navItems.map((item, index) => (
-          <a
-            key={item.href}
-            href={item.href}
-            className={cn(
-              "hidden items-end border-r border-[var(--line)] px-4 pb-4 text-xs font-bold text-[var(--foreground)] transition hover:bg-[var(--surface-strong)] hover:text-[var(--background)] md:flex",
-              index === 0 && "bg-[var(--surface-strong)] text-[var(--background)]",
-            )}
-          >
-            <span className="flex w-full items-end justify-between gap-2">
-              {item.label}
-              <span className="text-[0.58rem]">{String(index + 1).padStart(2, "0")}</span>
-            </span>
-          </a>
-        ))}
+        {navItems.map((item, index) => {
+          const isActive = activeHref === item.href;
+
+          return (
+            <a
+              key={item.href}
+              href={item.href}
+              aria-current={isActive ? "page" : undefined}
+              className={cn(
+                "inverse-hover group hidden items-end border-r border-[var(--line)] px-4 pb-4 text-xs font-bold text-[var(--foreground)] transition md:flex",
+                isActive && "nav-link-active",
+              )}
+              onClick={() => setActiveHref(item.href)}
+            >
+              <span
+                className={cn(
+                  "flex w-full items-end justify-between gap-2 transition-colors group-hover:text-[var(--background)]",
+                  isActive && "text-[var(--background)]",
+                )}
+              >
+                {item.label}
+                <span
+                  className={cn(
+                    "text-[0.58rem] transition-colors group-hover:text-[var(--background)]",
+                    isActive && "text-[var(--background)]",
+                  )}
+                >
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+              </span>
+            </a>
+          );
+        })}
 
         <a
           href={`mailto:${profile.email}`}
-          className="hidden items-end justify-center border-r border-[var(--line)] px-4 pb-4 text-xs font-bold text-[var(--muted)] transition hover:bg-[var(--surface-strong)] hover:text-[var(--background)] md:flex"
+          className="inverse-hover hidden items-end justify-center border-r border-[var(--line)] px-4 pb-4 text-xs font-bold text-[var(--muted)] transition md:flex"
         >
           Contact
         </a>
@@ -50,7 +99,7 @@ export function Navbar() {
 
         <button
           type="button"
-          className="flex h-20 w-20 items-center justify-center border-l border-[var(--line)] text-[var(--foreground)] transition hover:bg-[var(--surface-strong)] hover:text-[var(--background)] md:hidden"
+          className="inverse-hover flex h-20 w-20 items-center justify-center border-l border-[var(--line)] text-[var(--foreground)] transition md:hidden"
           aria-label={isOpen ? "Close menu" : "Open menu"}
           aria-expanded={isOpen}
           onClick={() => setIsOpen((current) => !current)}
@@ -67,16 +116,27 @@ export function Navbar() {
       >
         <div className="min-h-0">
           <div className="grid">
-            {navItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className="border-b border-[var(--line)] px-4 py-4 text-sm font-bold text-[var(--foreground)] transition hover:bg-[var(--surface-strong)] hover:text-[var(--background)]"
-                onClick={() => setIsOpen(false)}
-              >
-                {item.label}
-              </a>
-            ))}
+            {navItems.map((item) => {
+              const isActive = activeHref === item.href;
+
+              return (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  aria-current={isActive ? "page" : undefined}
+                  className={cn(
+                    "inverse-hover border-b border-[var(--line)] px-4 py-4 text-sm font-bold text-[var(--foreground)] transition",
+                    isActive && "nav-link-active text-[var(--background)]",
+                  )}
+                  onClick={() => {
+                    setActiveHref(item.href);
+                    setIsOpen(false);
+                  }}
+                >
+                  {item.label}
+                </a>
+              );
+            })}
           </div>
         </div>
       </div>
