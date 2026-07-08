@@ -57,7 +57,7 @@ export type ExperienceItem = {
 };
 
 export const profile: Profile = {
-  name: "Muazzam Hazmi",
+  name: "Muazzam",
   role: "Software Engineer",
   email: "muazzamhazmiii@gmail.com",
   github: "https://github.com/zactsm",
