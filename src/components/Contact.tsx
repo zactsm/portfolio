@@ -32,13 +32,13 @@ export function Contact() {
                   href={link.href}
                   target={isExternal ? "_blank" : undefined}
                   rel={isExternal ? "noreferrer" : undefined}
-                  className="inverse-hover group flex items-center justify-between gap-4 border-b border-[var(--line)] p-5 transition sm:p-7"
+                  className="inverse-hover group grid min-w-0 grid-cols-[minmax(0,1fr)_auto] items-center gap-4 border-b border-[var(--line)] p-5 transition sm:p-7"
                 >
                   <span className="flex min-w-0 items-center gap-3">
                     <span className="flex h-10 w-10 shrink-0 items-center justify-center border border-[var(--line)] text-[var(--foreground)] transition group-hover:border-[var(--background)] group-hover:text-[var(--background)]">
                       <Icon size={18} />
                     </span>
-                    <span className="truncate text-lg font-bold">
+                    <span className="block min-w-0 truncate text-base font-bold sm:text-lg">
                       {link.label}
                     </span>
                   </span>
