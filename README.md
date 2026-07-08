@@ -1,4 +1,4 @@
-# Muazzam Portfolio
+# Portfolio
 
 A personal portfolio website for Muazzam, a software engineer focused on secure web applications, full-stack development, cybersecurity, and cloud-backed systems.
 
