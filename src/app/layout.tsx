@@ -4,9 +4,9 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Your Name | Frontend Developer",
+  title: "Muazzam | Software Engineer",
   description:
-    "A modern portfolio for a frontend developer building responsive web apps with React, Next.js, TypeScript, and Tailwind CSS.",
+    "A modern portfolio for a software engineer building responsive web apps with React, Next.js, TypeScript, and Tailwind CSS.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {

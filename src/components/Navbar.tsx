@@ -90,7 +90,7 @@ export function Navbar() {
           href={`mailto:${profile.email}`}
           className="inverse-hover hidden items-end justify-center border-r border-[var(--line)] px-4 pb-4 text-xs font-bold text-[var(--muted)] transition md:flex"
         >
-          Contact
+          Email Me
         </a>
 
         <div className="hidden items-end px-7 pb-4 text-xs font-semibold text-[var(--muted)] md:flex">

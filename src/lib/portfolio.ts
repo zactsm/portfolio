@@ -57,9 +57,9 @@ export type ExperienceItem = {
 export const profile: Profile = {
   name: "Muazzam",
   role: "Software Engineer",
-  email: "your.email@example.com",
-  github: "https://github.com/yourusername",
-  linkedin: "https://linkedin.com/in/yourusername",
+  email: "muazzamhazmiii@gmail.com",
+  github: "https://github.com/zactsm",
+  linkedin: "https://linkedin.com/in/muazzam-hazmi",
   headline: "Building modern web apps with clean interfaces and sharp performance.",
   subtitle:
     "I create responsive, practical web experiences with React, Next.js, TypeScript, and Tailwind CSS. My focus is simple: polished UI, reliable code, and fast deployment.",
