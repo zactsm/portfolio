@@ -150,7 +150,7 @@ button {
 
 .display-type {
   color: var(--foreground);
-  font-size: clamp(4.4rem, 13vw, 16rem);
+  font-size: clamp(3.5rem, 13vw, 16rem);
   font-weight: 700;
   letter-spacing: 0;
   line-height: 0.86;
