@@ -55,8 +55,8 @@ export type ExperienceItem = {
 };
 
 export const profile: Profile = {
-  name: "Your Name",
-  role: "Frontend Developer",
+  name: "Muazzam",
+  role: "Software Engineer",
   email: "your.email@example.com",
   github: "https://github.com/yourusername",
   linkedin: "https://linkedin.com/in/yourusername",
