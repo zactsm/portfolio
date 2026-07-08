@@ -7,9 +7,9 @@ export function Experience() {
       <div className="catalog-panel">
         <div className="p-5 sm:p-7">
           <SectionHeading
-            eyebrow="Experience / Learning"
-            title="A practical learning path built around shipping real interfaces."
-            description="This section works whether you have formal work experience yet or are still building your first professional portfolio."
+            eyebrow="Experience / Education"
+            title="Hands-on experience across support, development, and security."
+            description="A timeline of internship, freelance, and academic work shaped by full-stack development, infrastructure hardening, planning, and information assurance."
           />
         </div>
 

@@ -94,7 +94,7 @@ export function Navbar() {
         </a>
 
         <div className="hidden items-end px-7 pb-4 text-xs font-semibold text-[var(--muted)] md:flex">
-          No styles selected
+          Available Sep 2026
         </div>
 
         <button

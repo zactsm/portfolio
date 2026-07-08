@@ -16,8 +16,8 @@ export function Contact() {
           <div className="border-b border-[var(--line)] p-5 sm:p-7 lg:border-b-0 lg:border-r">
             <SectionHeading
               eyebrow="Contact"
-              title="Have a project idea or want to connect?"
-              description="Send a quick email or visit the social links below. This portfolio intentionally keeps contact simple with no backend form or stored data."
+              title="Open to software engineering and IT opportunities."
+              description="Available to commence employment in September 2026. Reach out by email, GitHub, or LinkedIn for roles, collaborations, or project discussions."
             />
           </div>
 

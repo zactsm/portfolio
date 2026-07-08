@@ -7,6 +7,9 @@ type ProjectCardProps = {
 };
 
 export function ProjectCard({ project, index }: ProjectCardProps) {
+  const isLiveExternal = project.liveUrl.startsWith("http");
+  const isGithubExternal = project.githubUrl.startsWith("http");
+
   return (
     <article
       className="catalog-row grid transition hover:bg-[rgba(245,243,208,0.04)] lg:grid-cols-[1.1fr_0.9fr]"
@@ -45,20 +48,20 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         <div className="flex flex-wrap gap-x-8 gap-y-4">
           <a
             href={project.liveUrl}
-            target="_blank"
-            rel="noreferrer"
+            target={isLiveExternal ? "_blank" : undefined}
+            rel={isLiveExternal ? "noreferrer" : undefined}
             className="catalog-link"
           >
-            Live Demo
+            {project.liveLabel ?? "Live Demo"}
             <ArrowUpRight size={16} />
           </a>
           <a
             href={project.githubUrl}
-            target="_blank"
-            rel="noreferrer"
+            target={isGithubExternal ? "_blank" : undefined}
+            rel={isGithubExternal ? "noreferrer" : undefined}
             className="catalog-link"
           >
-            GitHub
+            {project.githubLabel ?? "GitHub"}
             <Github size={16} />
           </a>
         </div>

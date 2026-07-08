@@ -39,6 +39,8 @@ export type Project = {
   stack: string[];
   liveUrl: string;
   githubUrl: string;
+  liveLabel?: string;
+  githubLabel?: string;
 };
 
 export type SkillGroup = {
@@ -55,15 +57,15 @@ export type ExperienceItem = {
 };
 
 export const profile: Profile = {
-  name: "Muazzam",
+  name: "Muazzam Hazmi",
   role: "Software Engineer",
   email: "muazzamhazmiii@gmail.com",
   github: "https://github.com/zactsm",
   linkedin: "https://linkedin.com/in/muazzam-hazmi",
-  headline: "Building modern web apps with clean interfaces and sharp performance.",
+  headline: "Building secure web platforms, cloud-backed systems, and practical user experiences.",
   subtitle:
-    "I create responsive, practical web experiences with React, Next.js, TypeScript, and Tailwind CSS. My focus is simple: polished UI, reliable code, and fast deployment.",
-  location: "Malaysia",
+    "I am an IT graduate specializing in software engineering and cybersecurity, with hands-on experience across React, PHP, Flutter, MySQL, Docker, Cloudflare, and Google Cloud Platform.",
+  location: "Shah Alam, Selangor, Malaysia",
 };
 
 export const navItems: NavItem[] = [
@@ -82,49 +84,55 @@ export const socialLinks = [
 
 export const highlights: Highlight[] = [
   {
-    title: "Responsive Design",
+    title: "Secure Web Apps",
     description:
-      "Interfaces that hold up across phones, tablets, laptops, and wide displays.",
+      "Full-stack applications with authentication, payload sanitization, database-backed user flows, and practical security hardening.",
     icon: Layers3,
   },
   {
-    title: "Clean Code",
+    title: "System Recovery",
     description:
-      "Typed, component-driven implementation with readable structure and reusable data.",
+      "Hands-on support experience with troubleshooting, MySQL recovery, data integrity checks, and production issue handling.",
     icon: Code2,
   },
   {
-    title: "Fast Deployment",
+    title: "Cloud Delivery",
     description:
-      "Vercel-ready builds with a focus on smooth delivery and maintainable updates.",
+      "Experience deploying Dockerized apps, Cloudflare-protected systems, and Google Cloud Platform backend services.",
     icon: Rocket,
   },
 ];
 
 export const projects: Project[] = [
   {
-    name: "TaskFlow Studio",
+    name: "FF Portal",
     description:
-      "A task management workspace with project boards, priority tags, quick filters, and a focused dashboard for daily planning.",
-    stack: ["React", "TypeScript", "Tailwind CSS", "Supabase"],
-    liveUrl: "https://example.com/taskflow",
-    githubUrl: "https://github.com/yourusername/taskflow",
+      "A full-stack financial learning portal featuring Google OAuth 2.0, gamified progression, quizzes, referrals, analytics, secure MySQL-backed user management, and a Gemini RAG AI chatbot for contextual financial queries.",
+    stack: ["React", "PHP", "MySQL", "Docker", "Cloudflare WAF", "Gemini API"],
+    liveUrl: `mailto:${profile.email}?subject=FF%20Portal%20demo%20request`,
+    githubUrl: profile.github,
+    liveLabel: "Request Demo",
+    githubLabel: "GitHub Profile",
   },
   {
-    name: "Portfolio System",
+    name: "Survey Emailer",
     description:
-      "A polished personal portfolio with reusable sections, smooth scrolling, strong project cards, and a performance-conscious dark UI.",
-    stack: ["Next.js", "Tailwind CSS", "GSAP", "Vercel"],
-    liveUrl: "https://example.com/portfolio",
-    githubUrl: "https://github.com/yourusername/portfolio",
+      "An admin-driven email automation workflow for Be$MART Financial Literacy M3 and M6 surveys, importing Excel student data, queueing recipient batches, sending emails asynchronously, and reporting university-wise delivery and eligibility analytics.",
+    stack: ["PHP", "MySQL", "Excel Import", "Worker Queues", "Analytics"],
+    liveUrl: `mailto:${profile.email}?subject=Survey%20Emailer%20demo%20request`,
+    githubUrl: profile.github,
+    liveLabel: "Request Demo",
+    githubLabel: "GitHub Profile",
   },
   {
-    name: "LaunchPad SaaS",
+    name: "AR Real Estate",
     description:
-      "A modern SaaS landing page concept with conversion-focused sections, responsive pricing blocks, and clean product messaging.",
-    stack: ["Next.js", "TypeScript", "Figma", "Vercel"],
-    liveUrl: "https://example.com/launchpad",
-    githubUrl: "https://github.com/yourusername/launchpad",
+      "A final-year mobile and cloud ecosystem for AR property viewing, built with Flutter and Dart, integrated with Google ARCore for 3D walkthroughs, backed by PHP services on Google Cloud Platform and Aiven for MySQL.",
+    stack: ["Flutter", "Dart", "Google ARCore", "PHP", "Google Cloud", "Aiven MySQL"],
+    liveUrl: `mailto:${profile.email}?subject=AR%20Real%20Estate%20demo%20request`,
+    githubUrl: profile.github,
+    liveLabel: "Request Demo",
+    githubLabel: "GitHub Profile",
   },
 ];
 
@@ -136,57 +144,72 @@ export const skillGroups: SkillGroup[] = [
       "HTML",
       "CSS",
       "JavaScript",
-      "TypeScript",
-      "React",
-      "Next.js",
-      "Tailwind CSS",
+      "React.js",
+      "Vite",
+      "Flutter",
+      "Dart",
     ],
   },
   {
     title: "Backend / Database",
     icon: Database,
-    skills: ["Node.js", "Supabase", "PostgreSQL"],
+    skills: [
+      "PHP",
+      "Laravel",
+      "REST API Development",
+      "MySQL",
+      "Database Administration",
+      "SQL",
+    ],
   },
   {
     title: "Tools",
     icon: TerminalSquare,
-    skills: ["Git", "GitHub", "Vercel", "Figma"],
+    skills: [
+      "Docker",
+      "Git",
+      "GitHub",
+      "Google Cloud Platform",
+      "Cloudflare WAF",
+      "Android Studio",
+      "Microsoft Project",
+    ],
   },
 ];
 
 export const experienceItems: ExperienceItem[] = [
   {
-    period: "Current",
-    title: "Built frontend projects with React and Next.js",
+    period: "Mar 2026 - Expected Sep 2026",
+    title: "IT Support Assistant - FF Studios Sdn. Bhd.",
     description:
-      "Created component-based interfaces that emphasize reusable layouts, modern styling, and responsive behavior.",
-    tags: ["React", "Next.js", "Components"],
+      "Developed a Docker-containerized full-stack financial learning portal with React, PHP, MySQL, Google OAuth 2.0, and a custom Gemini RAG AI chatbot. Supported infrastructure hardening through penetration testing, Cloudflare WAF, and MySQL recovery for 2,000+ user profiles.",
+    tags: ["React", "PHP", "MySQL", "Docker", "Cloudflare"],
   },
   {
-    period: "Practice",
-    title: "Practiced responsive UI and accessibility",
+    period: "Nov 2025 - Expected Sep 2026",
+    title: "Project Planner - Ingens Insignia Sdn. Bhd.",
     description:
-      "Focused on layouts that scan well, buttons and links that are clear, and interfaces that remain usable across screen sizes.",
-    tags: ["Responsive UI", "Accessibility", "Tailwind"],
+      "Managed construction and M&E schedules for an RM4M+ JKR renovation project, monitoring progress, analyzing variances, and keeping project timelines and budgets aligned.",
+    tags: ["Microsoft Project", "Scheduling", "Progress Tracking"],
   },
   {
-    period: "Deployment",
-    title: "Deployed projects with Vercel",
+    period: "Oct 2022 - Expected Oct 2026",
+    title: "Bachelor of Information Technology (Hons) - IIUM",
     description:
-      "Prepared frontend projects for production using clean builds, sensible metadata, and Vercel-friendly structure.",
-    tags: ["Vercel", "Performance", "Production"],
+      "Pursuing Information Assurance and Security with a 3.57 CGPA, combining software engineering, cybersecurity, database systems, cloud deployment, and secure application development.",
+    tags: ["Information Assurance", "Cybersecurity", "3.57 CGPA"],
   },
 ];
 
 export const currentFocus = [
-  "Frontend development",
-  "Clean UI systems",
-  "Performance-minded interfaces",
-  "Practical web applications",
+  "Software engineering",
+  "Cybersecurity",
+  "Full-stack development",
+  "Cloud-backed systems",
 ];
 
 export const replaceableContent = [
-  "Name, role, email, GitHub, and LinkedIn in src/lib/portfolio.ts",
-  "Project names, descriptions, demo links, and repository links",
-  "Skills, timeline items, and about section focus areas",
+  "Profile, socials, projects, skills, and timeline content are managed in src/lib/portfolio.ts",
+  "Public project URLs can be added when live demos or repositories are available",
+  "Contact links use email, GitHub, and LinkedIn from the profile object",
 ];

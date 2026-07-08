@@ -9,8 +9,8 @@ export function Projects() {
         <div className="p-5 sm:p-7">
           <SectionHeading
             eyebrow="Projects"
-            title="Featured builds with realistic product direction."
-            description="These placeholder projects are structured like real portfolio entries, so you can replace the links and copy as your work grows."
+            title="Featured builds from web, automation, and mobile AR work."
+            description="Selected projects from internship, automation, and final-year development work, focused on secure user flows, useful admin tooling, and cloud-backed application architecture."
           />
         </div>
 

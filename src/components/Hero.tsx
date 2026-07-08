@@ -9,10 +9,10 @@ export function Hero() {
     >
       <div className="border-b border-[var(--line)] py-5" data-reveal>
         <div className="catalog-meta">
-          <span>Search</span>
-          <span>Categories 4</span>
-          <span>Properties 4</span>
-          <span>Personality 4</span>
+          <span>Software Engineering</span>
+          <span>Cybersecurity</span>
+          <span>Full-Stack Development</span>
+          <span>Cloud Systems</span>
           <span>{profile.location}</span>
         </div>
       </div>
@@ -20,8 +20,8 @@ export function Hero() {
       <div className="catalog-panel mt-10" data-reveal>
         <div className="catalog-meta border-b border-[var(--line)] px-5 py-4 sm:px-7">
           <span>{profile.role}</span>
-          <span>Responsive Web Apps</span>
-          <span>Available</span>
+          <span>Information Assurance and Security</span>
+          <span>Available Sep 2026</span>
         </div>
 
         <div className="px-5 py-12 sm:px-7 sm:py-16 lg:py-20">
@@ -52,8 +52,8 @@ export function Hero() {
             <div className="grid grid-cols-3 border border-[var(--line)]">
               {[
                 ["03", "Projects"],
-                ["15+", "Skills"],
-                ["100", "Responsive"],
+                ["20+", "Skills"],
+                ["3.57", "CGPA"],
               ].map(([value, label]) => (
                 <div
                   key={label}

@@ -9,8 +9,8 @@ export function About() {
           <div className="border-b border-[var(--line)] p-5 sm:p-7 lg:border-b-0 lg:border-r">
             <SectionHeading
               eyebrow="About"
-              title="Clean interfaces for practical web apps."
-              description="I enjoy turning ideas into responsive interfaces that feel polished, easy to scan, and dependable in real use. My work leans toward frontend development, performance, accessible structure, and simple deployment workflows."
+              title="Secure systems, practical software, and polished delivery."
+              description="I work across web, mobile, database, and infrastructure tasks, with a strong interest in software engineering and cybersecurity. My experience includes full-stack portals, AR mobile development, cloud-hosted backends, data recovery, and production hardening."
             />
           </div>
 

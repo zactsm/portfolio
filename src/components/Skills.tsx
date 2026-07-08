@@ -8,8 +8,8 @@ export function Skills() {
         <div className="p-5 sm:p-7">
           <SectionHeading
             eyebrow="Skills"
-            title="A focused toolkit for modern web development."
-            description="The stack is intentionally practical: strong frontend foundations, enough backend awareness to ship useful apps, and tools that support clean design-to-deploy workflows."
+            title="A practical toolkit for secure application delivery."
+            description="My stack combines programming languages, frontend frameworks, backend development, database administration, cloud deployment, and the tools needed to support real systems."
           />
         </div>
 
