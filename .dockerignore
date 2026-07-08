@@ -1,0 +1,16 @@
+node_modules
+.next
+out
+build
+.git
+.agents
+.env
+.env*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.next-dev.log
+.next-dev.err.log
+Dockerfile.dev
+docker-compose.yml
