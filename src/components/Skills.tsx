@@ -13,7 +13,7 @@ export function Skills() {
           />
         </div>
 
-        <div className="grid border-t border-[var(--line)] md:grid-cols-3">
+        <div className="grid border-t border-[var(--line)] md:grid-cols-2 xl:grid-cols-4">
           {skillGroups.map((group, index) => (
             <article
               key={group.title}

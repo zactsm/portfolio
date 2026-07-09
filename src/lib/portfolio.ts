@@ -64,7 +64,7 @@ export const profile: Profile = {
   linkedin: "https://linkedin.com/in/muazzam-hazmi",
   headline: "Building secure web platforms, cloud-backed systems, and practical user experiences.",
   subtitle:
-    "I am an IT graduate specializing in software engineering and cybersecurity, with hands-on experience across React, PHP, Flutter, MySQL, Docker, Cloudflare, and Google Cloud Platform.",
+    "IT graduate specializing in full-stack software engineering, cybersecurity, and modern DevOps practices. Experienced in developing secure web and cross-platform mobile applications using React, PHP, and Flutter. Skilled in architecting scalable backends, managing databases, modernizing deployment workflows through containerization, and enforcing strict data security protocols.",
   location: "Shah Alam, Selangor, Malaysia",
 };
 
@@ -86,30 +86,30 @@ export const highlights: Highlight[] = [
   {
     title: "Secure Web Apps",
     description:
-      "Full-stack applications with authentication, payload sanitization, database-backed user flows, and practical security hardening.",
+      "Full-stack applications with authentication, payload sanitization, database-backed user flows, and security hardening via Cloudflare WAF and custom security headers.",
     icon: Layers3,
   },
   {
-    title: "System Recovery",
+    title: "DevOps & Recovery",
     description:
-      "Hands-on support experience with troubleshooting, MySQL recovery, data integrity checks, and production issue handling.",
+      "Containerized deployment workflows with Docker, achieving 99.9% environment consistency, plus MySQL disaster recovery restoring 100% data integrity for 2,000+ user profiles.",
     icon: Code2,
   },
   {
     title: "Cloud Delivery",
     description:
-      "Experience deploying Dockerized apps, Cloudflare-protected systems, and Google Cloud Platform backend services.",
+      "Experience deploying Dockerized apps, Cloudflare-protected systems, and Google Cloud Platform backend services with serverless edge request handling.",
     icon: Rocket,
   },
 ];
 
 export const projects: Project[] = [
   {
-    name: "FF Portal",
+    name: "Portal FF",
     description:
-      "A full-stack financial learning portal featuring Google OAuth 2.0, gamified progression, quizzes, referrals, analytics, secure MySQL-backed user management, and a Gemini RAG AI chatbot for contextual financial queries.",
+      "A full-stack financial literacy web portal built with React, PHP, and MySQL, integrating a custom Gemini AI chatbot that automated over 5,000+ manual inquiries per month and reduced average response time by 95%. Features secure API endpoints and database services establishing a modular architecture that reliably scales to support 1,000+ user sessions.",
     stack: ["React", "PHP", "MySQL", "Docker", "Cloudflare WAF", "Gemini API"],
-    liveUrl: `mailto:${profile.email}?subject=FF%20Portal%20demo%20request`,
+    liveUrl: `mailto:${profile.email}?subject=Portal%20FF%20demo%20request`,
     githubUrl: profile.github,
     liveLabel: "Request Demo",
     githubLabel: "GitHub Profile",
@@ -127,7 +127,7 @@ export const projects: Project[] = [
   {
     name: "AR Real Estate",
     description:
-      "A final-year mobile and cloud ecosystem for AR property viewing, built with Flutter and Dart, integrated with Google ARCore for 3D walkthroughs, backed by PHP services on Google Cloud Platform and Aiven for MySQL.",
+      "A cross-platform AR mobile application built with Flutter 3.44.5 and Google ARCore for immersive 3D property walkthroughs. Secured with Role-Based Access Control (RBAC) across 3-tiered user roles, successfully managing 2.4K+ serverless edge requests and 100MB+ in data transfers, validated via formal UAT with 30 respondents.",
     stack: ["Flutter", "Dart", "Google ARCore", "PHP", "Google Cloud", "Aiven MySQL"],
     liveUrl: `mailto:${profile.email}?subject=AR%20Real%20Estate%20demo%20request`,
     githubUrl: profile.github,
@@ -138,41 +138,48 @@ export const projects: Project[] = [
 
 export const skillGroups: SkillGroup[] = [
   {
+    title: "Languages",
+    icon: Code2,
+    skills: [
+      "PHP",
+      "Dart",
+      "JavaScript",
+      "SQL",
+      "C#",
+      "VBA",
+      "Java",
+      "C",
+    ],
+  },
+  {
     title: "Frontend",
     icon: Sparkles,
     skills: [
-      "HTML",
-      "CSS",
-      "JavaScript",
       "React.js",
       "Vite",
       "Flutter",
-      "Dart",
+      "HTML/CSS",
     ],
   },
   {
     title: "Backend / Database",
     icon: Database,
     skills: [
-      "PHP",
       "Laravel",
       "REST API Development",
       "MySQL",
       "Database Administration",
-      "SQL",
     ],
   },
   {
-    title: "Tools",
+    title: "Cloud, Tools & APIs",
     icon: TerminalSquare,
     skills: [
+      "Google Cloud Platform (App Engine)",
       "Docker",
-      "Git",
-      "GitHub",
-      "Google Cloud Platform",
-      "Cloudflare WAF",
-      "Android Studio",
+      "Git/GitHub",
       "Microsoft Project",
+      "Android Studio",
     ],
   },
 ];
@@ -182,22 +189,22 @@ export const experienceItems: ExperienceItem[] = [
     period: "Mar 2026 - Expected Sep 2026",
     title: "IT Support Assistant - FF Studios Sdn. Bhd.",
     description:
-      "Developed a Docker-containerized full-stack financial learning portal with React, PHP, MySQL, Google OAuth 2.0, and a custom Gemini RAG AI chatbot. Supported infrastructure hardening through penetration testing, Cloudflare WAF, and MySQL recovery for 2,000+ user profiles.",
-    tags: ["React", "PHP", "MySQL", "Docker", "Cloudflare"],
+      "Containerized core internal platforms using Docker, reducing manual server configuration time by 70% and achieving 99.9% environment consistency across dev/prod pipelines. Hardened infrastructure against XSS and SQL injection threats by deploying Cloudflare WAF and custom security headers, neutralizing 50+ potential malicious requests monthly. Executed a critical MySQL disaster recovery operation, restoring 100% data integrity for 2,000+ user profiles within 48 hours.",
+    tags: ["Docker", "Cloudflare WAF", "MySQL", "DevOps", "Security"],
   },
   {
     period: "Nov 2025 - Expected Sep 2026",
     title: "Project Planner - Ingens Insignia Sdn. Bhd.",
     description:
-      "Managed construction and M&E schedules for an RM4M+ JKR renovation project, monitoring progress, analyzing variances, and keeping project timelines and budgets aligned.",
-    tags: ["Microsoft Project", "Scheduling", "Progress Tracking"],
+      "Overcame strict multi-campus scheduling constraints for the RM4.51M JKR renovation project at Sunway Putra Tower by baseline-architecting a detailed 195-day tracking timeline across all structural, partition, ceiling, and finishing phases. Mitigated project delay risks by managing physical and financial S-Curves through Microsoft Project, tracking a progressive baseline target from 0.02% initialization to 92.37%+ execution milestones, effectively monitoring a milestone budget up to RM2.84M.",
+    tags: ["Microsoft Project", "Scheduling", "S-Curves", "Progress Tracking"],
   },
   {
     period: "Oct 2022 - Expected Oct 2026",
     title: "Bachelor of Information Technology (Hons) - IIUM",
     description:
-      "Pursuing Information Assurance and Security with a 3.57 CGPA, combining software engineering, cybersecurity, database systems, cloud deployment, and secure application development.",
-    tags: ["Information Assurance", "Cybersecurity", "3.57 CGPA"],
+      "Pursuing Information Assurance and Security with a 3.57 CGPA at International Islamic University Malaysia (IIUM), Gombak, Selangor. Co-authored and presented an IEEE paper at the 2024 IEEE 14th Symposium on Computer Applications & Industrial Electronics (ISCAIE), Penang, Malaysia.",
+    tags: ["Information Assurance", "Cybersecurity", "3.57 CGPA", "IEEE Publication"],
   },
 ];
 
@@ -205,7 +212,7 @@ export const currentFocus = [
   "Software engineering",
   "Cybersecurity",
   "Full-stack development",
-  "Cloud-backed systems",
+  "Modern DevOps",
 ];
 
 export const replaceableContent = [

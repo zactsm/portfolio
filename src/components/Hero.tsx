@@ -12,7 +12,7 @@ export function Hero() {
           <span>Software Engineering</span>
           <span>Cybersecurity</span>
           <span>Full-Stack Development</span>
-          <span>Cloud Systems</span>
+          <span>Modern DevOps</span>
           <span>{profile.location}</span>
         </div>
       </div>

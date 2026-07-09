@@ -9,3 +9,5 @@ Content is based on Muazzam's CV and resume, highlighting experience with React,
 Featured work includes FF Portal, Survey Emailer, and AR Real Estate, alongside professional experience, education, technical skills, contact links, and selected career focus areas.
 
 The project is built with Next.js, TypeScript, Tailwind CSS, GSAP, Lenis smooth scrolling, local Clash Display typography, and Vercel Speed Insights.
+
+> **Note:** Don't forget to run `npm install` and `npm run dev` after cloning the repository :)
