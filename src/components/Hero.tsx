@@ -5,7 +5,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="section-wrap min-h-screen pb-8 pt-28 lg:pt-32"
+      className="section-wrap pb-8 pt-28 lg:pt-32"
     >
       <div className="border-b border-[var(--line)] py-5" data-reveal>
         <div className="catalog-meta">
