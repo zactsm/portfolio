@@ -9,7 +9,7 @@ export function Skills() {
           <SectionHeading
             eyebrow="Skills"
             title="A practical toolkit for secure application delivery."
-            description="My stack combines programming languages, frontend frameworks, backend development, database administration, cloud deployment, and the tools needed to support real systems."
+            description="My stack combines core programming languages, modern frontend and mobile frameworks, robust backend architecture, database administration, cloud services, and AI API integrations."
           />
         </div>
 

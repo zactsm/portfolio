@@ -9,8 +9,8 @@ export function Projects() {
         <div className="p-5 sm:p-7">
           <SectionHeading
             eyebrow="Projects"
-            title="Featured builds from web, automation, and mobile AR work."
-            description="Selected projects from internship, automation, and final-year development work, focused on secure user flows, useful admin tooling, and cloud-backed application architecture."
+            title="Featured builds across web, mobile AR, enterprise tooling, and AI platforms."
+            description="Selected engineering projects spanning full-stack web platforms, mobile AR applications, IT support ticketing systems, healthcare portals, and automated survey data workflows."
           />
         </div>
 

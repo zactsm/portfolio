@@ -17,11 +17,11 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
     >
       <div className="border-b border-[var(--line)] p-5 sm:p-7 lg:border-b-0 lg:border-r">
         <div className="catalog-meta mb-12">
-          <span>Featured 0{index + 1}</span>
+          <span>Featured {String(index + 1).padStart(2, "0")}</span>
           <span>{project.stack.length} technologies</span>
         </div>
 
-        <h3 className="section-type max-w-[9ch]">
+        <h3 className="section-type max-w-xl">
           {project.name}
         </h3>
         <p className="body-copy mt-8 max-w-3xl">{project.description}</p>
