@@ -51,7 +51,7 @@ export function Hero() {
 
             <div className="grid grid-cols-3 border border-[var(--line)]">
               {[
-                ["03", "Projects"],
+                ["07", "Projects"],
                 ["20+", "Skills"],
                 ["3.57", "CGPA"],
               ].map(([value, label]) => (

@@ -117,7 +117,7 @@ export const projects: Project[] = [
   {
     name: "MediSync",
     description:
-      "A modern full-stack healthcare synchronization and caregiver delegation platform. Enables real-time medical checklist tracking, daily medication adherence logging with low-refill alerts, an AI clinical term simplifier, a secure medical document vault backed by Supabase storage, caregiver delegation via unique sync codes (MS-...), and emergency SOS / public ICE profile routes (ICE-...) for first responders.",
+      "A modern full-stack healthcare synchronization and caregiver delegation platform. Enables real-time medical checklist tracking, daily medication adherence logging with low-refill alerts, an AI clinical term simplifier, a secure medical document vault backed by Supabase storage, caregiver delegation via unique sync codes, and emergency SOS / public ICE profile routes for first responders.",
     stack: ["Laravel 13", "React 19", "Inertia.js", "PostgreSQL", "Supabase", "Tailwind CSS", "Google Maps API"],
     liveUrl: `mailto:${profile.email}?subject=MediSync%20demo%20request`,
     githubUrl: profile.github,
@@ -145,7 +145,7 @@ export const projects: Project[] = [
     githubLabel: "GitHub Profile",
   },
   {
-    name: "FFGroceryTrack + Android",
+    name: "FFGrocery",
     description:
       "A dual-platform grocery inventory and expense reimbursement ecosystem comprising a PHP Laravel web management portal and a Flutter cross-platform mobile app. Streamlines inventory stock tracking, restock lists, role-based access control (Superadmin, Stocker, User), reimbursement claim (Tuntutan) submissions with receipt attachments, offline caching, and audit logging.",
     stack: ["Laravel", "Flutter", "PHP", "MySQL", "REST API", "Docker", "Role-Based Access"],
