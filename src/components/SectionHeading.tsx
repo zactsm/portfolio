@@ -14,21 +14,22 @@ export function SectionHeading({
   align = "left",
 }: SectionHeadingProps) {
   return (
-    <div
-      className={cn(
-        "max-w-5xl",
-        align === "center" && "mx-auto text-center",
-      )}
-      data-reveal
-    >
-      <div className="catalog-meta mb-8">
+    <div data-reveal className="w-full">
+      <div className="catalog-meta mb-8 w-full">
         <span>{eyebrow}</span>
         <span>Portfolio Index</span>
       </div>
-      <h2 className="text-balance text-4xl font-medium leading-none text-[var(--foreground)] sm:text-6xl lg:text-7xl">
-        {title}
-      </h2>
-      <p className="body-copy mt-6 max-w-3xl">{description}</p>
+      <div
+        className={cn(
+          "max-w-5xl",
+          align === "center" && "mx-auto text-center",
+        )}
+      >
+        <h2 className="text-balance text-4xl font-medium leading-none text-[var(--foreground)] sm:text-6xl lg:text-7xl">
+          {title}
+        </h2>
+        <p className="body-copy mt-6 max-w-3xl">{description}</p>
+      </div>
     </div>
   );
 }

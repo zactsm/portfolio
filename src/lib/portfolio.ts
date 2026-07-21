@@ -37,8 +37,8 @@ export type Project = {
   name: string;
   description: string;
   stack: string[];
-  liveUrl: string;
-  githubUrl: string;
+  liveUrl?: string;
+  githubUrl?: string;
   liveLabel?: string;
   githubLabel?: string;
 };

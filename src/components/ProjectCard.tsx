@@ -1,4 +1,3 @@
-import { ArrowUpRight, Github } from "lucide-react";
 import type { Project } from "@/lib/portfolio";
 
 type ProjectCardProps = {
@@ -7,9 +6,6 @@ type ProjectCardProps = {
 };
 
 export function ProjectCard({ project, index }: ProjectCardProps) {
-  const isLiveExternal = project.liveUrl.startsWith("http");
-  const isGithubExternal = project.githubUrl.startsWith("http");
-
   return (
     <article
       className="catalog-row grid transition hover:bg-[rgba(245,243,208,0.04)] lg:grid-cols-[1.1fr_0.9fr]"
@@ -27,11 +23,10 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         <p className="body-copy mt-8 max-w-3xl">{project.description}</p>
       </div>
 
-      <div className="flex flex-col justify-between gap-14 p-5 sm:p-7">
+      <div className="flex flex-col justify-between p-5 sm:p-7">
         <div>
           <div className="catalog-meta mb-6">
             <span>Stack</span>
-            <span>Portfolio Links</span>
           </div>
           <div className="flex flex-wrap gap-2">
             {project.stack.map((tech) => (
@@ -43,27 +38,6 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
               </span>
             ))}
           </div>
-        </div>
-
-        <div className="flex flex-wrap gap-x-8 gap-y-4">
-          <a
-            href={project.liveUrl}
-            target={isLiveExternal ? "_blank" : undefined}
-            rel={isLiveExternal ? "noreferrer" : undefined}
-            className="catalog-link"
-          >
-            {project.liveLabel ?? "Live Demo"}
-            <ArrowUpRight size={16} />
-          </a>
-          <a
-            href={project.githubUrl}
-            target={isGithubExternal ? "_blank" : undefined}
-            rel={isGithubExternal ? "noreferrer" : undefined}
-            className="catalog-link"
-          >
-            {project.githubLabel ?? "GitHub"}
-            <Github size={16} />
-          </a>
         </div>
       </div>
     </article>
