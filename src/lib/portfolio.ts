@@ -143,8 +143,6 @@ export const projects: Project[] = [
       "PHP 8.3",
       "PHPUnit",
     ],
-    liveUrl: "https://medisync-buildweek.vercel.app/",
-    liveLabel: "Visit",
   },
   {
     name: "VIZARE",
@@ -165,8 +163,6 @@ export const projects: Project[] = [
       "Android Studio",
       "iOS Runner",
     ],
-    liveUrl: "https://vizare-app.vercel.app/",
-    liveLabel: "Visit",
   },
   {
     name: "FFTicket",
