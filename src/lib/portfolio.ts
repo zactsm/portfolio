@@ -105,7 +105,7 @@ export const highlights: Highlight[] = [
 
 export const projects: Project[] = [
   {
-    name: "Portal FF",
+    name: "FFPortal",
     description:
       "A comprehensive Malay-language financial education portal combining structured learning modules, interactive videos, articles, and gamified elements (quizzes, XP, levels, and leaderboards). Features an integrated Gemini AI chatbot for financial guidance and instant quiz explanations, YouTube channel content integration, Google OAuth sign-in, and an extensive admin dashboard for content management, user reporting, and moderation.",
     stack: [
@@ -143,6 +143,7 @@ export const projects: Project[] = [
       "PHP 8.3",
       "PHPUnit",
     ],
+    githubUrl: "https://github.com/zactsm/medisync",
   },
   {
     name: "VIZARE",
@@ -163,6 +164,7 @@ export const projects: Project[] = [
       "Android Studio",
       "iOS Runner",
     ],
+    githubUrl: "https://github.com/zactsm/vizare-android-app",
   },
   {
     name: "FFTicket",
@@ -178,6 +180,7 @@ export const projects: Project[] = [
       "Telegram Bot API",
       "PDO Database Access",
     ],
+    githubUrl: "https://github.com/zactsm/ffticket",
   },
   {
     name: "FFGrocery",
@@ -195,6 +198,7 @@ export const projects: Project[] = [
       "Vite",
       "Role-Based Access Control",
     ],
+    githubUrl: "https://github.com/zactsm/ff-grocery-track",
   },
   {
     name: "FFSpotless",
@@ -210,6 +214,7 @@ export const projects: Project[] = [
       "PHP 8.3",
       "Docker Compose",
     ],
+    githubUrl: "https://github.com/zactsm/ff-spotless",
   },
   {
     name: "Survey Emailer",

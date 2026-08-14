@@ -1,3 +1,4 @@
+import { ArrowUpRight } from "lucide-react";
 import type { Project } from "@/lib/portfolio";
 
 type ProjectCardProps = {
@@ -23,20 +24,36 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         <p className="body-copy mt-8 max-w-3xl">{project.description}</p>
       </div>
 
-      <div className="p-5 sm:p-7">
-        <div className="catalog-meta mb-6">
-          <span>Stack</span>
+      <div className="flex flex-col justify-between p-5 sm:p-7">
+        <div>
+          <div className="catalog-meta mb-6">
+            <span>Stack</span>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {project.stack.map((tech) => (
+              <span
+                key={tech}
+                className="border border-[var(--line)] px-3 py-2 text-xs font-bold text-[var(--foreground)]"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
         </div>
-        <div className="flex flex-wrap gap-2">
-          {project.stack.map((tech) => (
-            <span
-              key={tech}
-              className="border border-[var(--line)] px-3 py-2 text-xs font-bold text-[var(--foreground)]"
+
+        {project.githubUrl && (
+          <div className="mt-8 pt-4">
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="catalog-link"
             >
-              {tech}
-            </span>
-          ))}
-        </div>
+              Repository
+              <ArrowUpRight size={15} />
+            </a>
+          </div>
+        )}
       </div>
     </article>
   );
