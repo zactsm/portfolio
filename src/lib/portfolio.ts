@@ -198,7 +198,7 @@ export const projects: Project[] = [
       "Vite",
       "Role-Based Access Control",
     ],
-    githubUrl: "https://github.com/zactsm/ff-grocery-track",
+    githubUrl: "https://github.com/zactsm/ff-grocery",
   },
   {
     name: "FFSpotless",
